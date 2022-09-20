@@ -1,0 +1,7 @@
+stylelint
+storybook
+tailwind = v1
+scss = v2
+lint-staged
+cypress
+ci/cd
