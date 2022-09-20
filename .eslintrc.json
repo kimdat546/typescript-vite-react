@@ -116,17 +116,8 @@
 		// eslint-plugin-import
 		"import/newline-after-import": 1,
 		"import/prefer-default-export": "off",
-		"import/no-unresolved": "error",
-		"import/extensions": [
-			"error",
-			"ignorePackages",
-			{
-				"js": "never",
-				"jsx": "never",
-				"ts": "never",
-				"tsx": "never"
-			}
-		],
+		"import/no-unresolved": 0,
+		"import/extensions": 0,
 		// style code
 		"indent": [
 			"error",
