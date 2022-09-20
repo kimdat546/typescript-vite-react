@@ -1,27 +1,63 @@
 {
-  "name": "typescript-vite-react",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "lint:scripts": "eslint --ext .ts,.tsx src"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
-    "@vitejs/plugin-react": "^2.1.0",
-    "eslint": "^8.23.1",
-    "eslint-plugin-react": "^7.31.8",
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0"
-  }
+	"name": "typescript-vite-react",
+	"author": "kimdat546",
+	"description": "setup project for typescript, tailwind, vite, react",
+	"type": "module",
+	"version": "1.0.0",
+	"private": true,
+	"license": "MIT",
+	"homepage": "https://github.com/kimdat546/typescript-vite-react",
+	"engines": {
+		"node": ">=14.0.0",
+		"yarn": ">=1.22.0",
+		"npm": "please-use-yarn"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"lint:es": "eslint . --ext .js,.jsx,.ts,.tsx",
+		"lint:style": "stylelint \"**/*.{css,scss}\"",
+		"lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix && stylelint \"**/*.{css,scss}\" --fix",
+		"lint": "yarn lint:es && yarn lint:style",
+		"husky": "husky install",
+		"stylelint-check": "stylelint-config-prettier-check",
+		"prettier": "prettier --write .",
+		"lint-staged": {
+			"*.{ts,tsx,js,jsx}": "eslint --cache --fix",
+			"styled.ts": "stylelint --cache"
+		}
+	},
+	"dependencies": {
+		"@vitejs/plugin-react": "^2.1.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"vite": "^3.1.2"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.1.2",
+		"@commitlint/config-conventional": "^17.1.0",
+		"@types/react": "^18.0.17",
+		"@types/react-dom": "^18.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.37.0",
+		"@typescript-eslint/parser": "^5.37.0",
+		"eslint": "^8.23.1",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-airbnb-typescript": "^17.0.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-import-resolver-typescript": "^3.5.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.31.8",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"prettier": "2.7.1",
+		"stylelint": "^14.11.0",
+		"stylelint-config-airbnb": "^0.0.0",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-recess-order": "^3.0.0",
+		"typescript": "^4.6.4"
+	}
 }
