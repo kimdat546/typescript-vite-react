@@ -9,10 +9,7 @@
 		"declaration-block-no-duplicate-properties": true,
 		"hue-degree-notation": "number",
 		"color-function-notation": "legacy",
-		"at-rule-name-case": "lower",
-		"color-hex-case": "lower",
 		"color-hex-length": "long",
-		"string-quotes": "single",
 		"length-zero-no-unit": null,
 		"font-family-name-quotes": "always-unless-keyword",
 		"font-weight-notation": "numeric",
@@ -23,13 +20,8 @@
 		"rule-empty-line-before": [
 			"always-multi-line",
 			{
-				"except": [
-					"after-single-line-comment",
-					"first-nested"
-				]
+				"except": ["after-single-line-comment", "first-nested"]
 			}
-		],
-		"indentation": "tab",
-		"linebreaks": "unix"
+		]
 	}
 }

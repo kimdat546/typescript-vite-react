@@ -1,6 +1,6 @@
 interface Props {
-  a: boolean;
-  abc: string;
+	a: boolean;
+	abc: string;
 }
 function Test({ a, abc }: Props) {
 	const b = 10;

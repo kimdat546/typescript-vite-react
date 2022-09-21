@@ -1,0 +1,4 @@
+{
+	"*.{ts,tsx,js,jsx}": ["yarn lint:es"],
+	"*.{css,scss}": ["yarn lint:style"]
+}

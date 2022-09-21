@@ -1,7 +1,7 @@
-stylelint
+lint-staged
 storybook
 tailwind = v1
 scss = v2
-lint-staged
+jest
 cypress
 ci/cd
