@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
 
-function App({ name }: { name: string }) {
+function App({ name = '' }: { name: string | null }) {
 	const [count, setCount] = useState(0);
 	return (
 		<div className="App">
