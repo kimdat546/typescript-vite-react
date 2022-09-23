@@ -28,7 +28,10 @@
 		"sourceType": "module",
 		"project": "./tsconfig.eslint.json"
 	},
-	"plugins": ["react", "@typescript-eslint"],
+	"plugins": [
+		"react",
+		"@typescript-eslint"
+	],
 	"rules": {
 		// React v.17.0
 		"react/prop-types": 0,
@@ -62,8 +65,14 @@
 			}
 		],
 		"react/jsx-props-no-spreading": "off",
-		"react/jsx-indent": ["error", "tab"],
-		"react/jsx-indent-props": ["error", "tab"],
+		"react/jsx-indent": [
+			"error",
+			"tab"
+		],
+		"react/jsx-indent-props": [
+			"error",
+			"tab"
+		],
 		"react/jsx-curly-brace-presence": [
 			"error",
 			{
@@ -71,7 +80,10 @@
 				"children": "never"
 			}
 		],
-		"react/jsx-boolean-value": ["warn", "never"],
+		"react/jsx-boolean-value": [
+			"warn",
+			"never"
+		],
 		"react/jsx-tag-spacing": [
 			"error",
 			{
@@ -90,7 +102,12 @@
 		"react/jsx-filename-extension": [
 			1,
 			{
-				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+				"extensions": [
+					".js",
+					".jsx",
+					".ts",
+					".tsx"
+				]
 			}
 		],
 		"no-unused-vars": "off",
@@ -101,6 +118,7 @@
 		"import/prefer-default-export": "off",
 		"import/no-unresolved": 0,
 		"import/extensions": 0,
+		"import/no-extraneous-dependencies": 0,
 		"import/order": [
 			"error",
 			{
@@ -125,13 +143,34 @@
 				"SwitchCase": 1
 			}
 		],
-		"quotes": [2, "single"],
-		"jsx-quotes": ["error", "prefer-double"],
-		"semi": [2, "always"],
-		"linebreak-style": [2, "unix"],
-		"wrap-iife": [2, "inside"],
-		"brace-style": [2, "1tbs"],
-		"block-spacing": [2, "always"],
+		"quotes": [
+			2,
+			"single"
+		],
+		"jsx-quotes": [
+			"error",
+			"prefer-double"
+		],
+		"semi": [
+			2,
+			"always"
+		],
+		"linebreak-style": [
+			2,
+			"unix"
+		],
+		"wrap-iife": [
+			2,
+			"inside"
+		],
+		"brace-style": [
+			2,
+			"1tbs"
+		],
+		"block-spacing": [
+			2,
+			"always"
+		],
 		"keyword-spacing": [
 			2,
 			{
@@ -140,7 +179,10 @@
 				"overrides": {}
 			}
 		],
-		"space-before-blocks": [2, "always"],
+		"space-before-blocks": [
+			2,
+			"always"
+		],
 		"space-before-function-paren": [
 			2,
 			{
@@ -148,8 +190,14 @@
 				"named": "never"
 			}
 		],
-		"arrow-parens": ["error", "as-needed"],
-		"arrow-body-style": [2, "as-needed"],
+		"arrow-parens": [
+			"error",
+			"as-needed"
+		],
+		"arrow-body-style": [
+			2,
+			"as-needed"
+		],
 		"comma-spacing": [
 			2,
 			{
@@ -157,9 +205,18 @@
 				"after": true
 			}
 		],
-		"comma-style": [2, "last"],
-		"array-bracket-spacing": [2, "never"],
-		"space-in-parens": [2, "never"],
+		"comma-style": [
+			2,
+			"last"
+		],
+		"array-bracket-spacing": [
+			2,
+			"never"
+		],
+		"space-in-parens": [
+			2,
+			"never"
+		],
 		// rules in js
 		"no-const-assign": 1,
 		"no-var": 1,
@@ -182,7 +239,10 @@
 			"version": "detect"
 		},
 		"import/parsers": {
-			"@typescript-eslint/parser": [".ts", ".tsx"]
+			"@typescript-eslint/parser": [
+				".ts",
+				".tsx"
+			]
 		},
 		"import/resolver": {
 			"typescript": {

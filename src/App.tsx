@@ -1,19 +1,13 @@
 import { useState } from 'react';
 
-import Test from 'components/Test';
-
 import './App.css';
 import reactLogo from './assets/react.svg';
 
-function App() {
+function App({ name }: { name: string }) {
 	const [count, setCount] = useState(0);
-	// const [count1, setCount1] = useState(0);
-	const abc = `dasdsa${123213}`;
 	return (
 		<div className="App">
 			<div>
-				{(() => 1)()}
-				{abc}
 				<a href="https://vitejs.dev" target="_blank" rel="noreferrer">
 					<img src="/vite.svg" className="logo" alt="Vite logo" />
 				</a>
@@ -24,9 +18,8 @@ function App() {
 						alt="React logo"
 					/>
 				</a>
-				<Test a abc="dasdsaasd" />
 			</div>
-			<h1>Vite + React</h1>
+			<h1>Hello {name}</h1>
 			<div className="card">
 				<button
 					type="button"
